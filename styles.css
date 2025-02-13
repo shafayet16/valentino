@@ -2,6 +2,7 @@
   --dark-lavender: #4b0082;
   --sky-blue: #87ceeb;
   --light-pink: #ffb6c1;
+  --container-gap: 30px;
   --romantic-red: #ff3366;
   --soft-rose: #ff6699;
   --gentle-purple: #9370db;
@@ -320,7 +321,7 @@ body {
   margin-bottom: 30px; /* Adjusted to increase the gap */
 }
 
-/* You can also add spacing for other sections with similar structure */
+/* Container styling */
 #love-story,
 #music-player,
 #vows,
