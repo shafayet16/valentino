@@ -158,26 +158,84 @@ nav a {
     width: 90%;
   }
 }
+:root {
+  --dark-pink: #ff3366; /* Romantic pink */
+  --soft-pink: #ff69b4; /* Soft pink */
+  --light-pink: #fff0f5; /* Light pink background */
+  --gold: #ffd700; /* Accent gold */
+  --white: #ffffff; /* White text */
+  --shadow: 0 4px 15px rgba(255, 51, 102, 0.3); /* Soft shadow */
+}
+
+/* Body Styling */
+body {
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg, var(--dark-pink), var(--soft-pink));
+  color: var(--white);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Valentine Container */
+.valentine-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Valentine Box Styling */
+.valentine-box {
+  background: var(--light-pink);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valentine-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(255, 51, 102, 0.5);
+}
+
 /* Vows Section */
 #vows {
-  background: #fff0f5;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+  background: linear-gradient(135deg, var(--dark-pink), var(--soft-pink));
+  color: var(--white);
+}
+
+#vows h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#vows p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 /* 100 Reasons I Love You Section */
 #100-reasons-i-love-you {
-  background: #fff0f5;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+  background: var(--light-pink);
+  color: var(--dark-pink);
+}
+
+#100-reasons-i-love-you h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 #100-reasons-i-love-you ul {
-  columns: 2; /* Split into two columns */
+  columns: 2;
   list-style-type: none;
   padding: 0;
 }
@@ -185,16 +243,19 @@ nav a {
 #100-reasons-i-love-you li {
   margin-bottom: 10px;
   font-size: 16px;
-  color: #333;
+  color: var(--dark-pink);
 }
 
 /* Timeline Section */
 #timeline {
-  background: #fff0f5;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+  background: linear-gradient(135deg, var(--soft-pink), var(--dark-pink));
+  color: var(--white);
+}
+
+#timeline h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 #timeline ul {
@@ -205,14 +266,23 @@ nav a {
 #timeline li {
   margin-bottom: 15px;
   font-size: 16px;
-  color: #333;
+  color: var(--white);
 }
 
 /* Wishes Section */
 #wishes {
-  background: #fff0f5;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+  background: var(--light-pink);
+  color: var(--dark-pink);
+}
+
+#wishes h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#wishes p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
 }
