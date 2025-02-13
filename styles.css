@@ -331,6 +331,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: var(--shadow);
+  border-bottom: #ff3366 10px solid;
 }
 #timeline,
 #100-reasons-i-love-you,
