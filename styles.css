@@ -158,3 +158,61 @@ nav a {
     width: 90%;
   }
 }
+/* Vows Section */
+#vows {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+}
+
+/* 100 Reasons I Love You Section */
+#100-reasons-i-love-you {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+}
+
+#100-reasons-i-love-you ul {
+  columns: 2; /* Split into two columns */
+  list-style-type: none;
+  padding: 0;
+}
+
+#100-reasons-i-love-you li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Timeline Section */
+#timeline {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+}
+
+#timeline ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#timeline li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Wishes Section */
+#wishes {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+}
