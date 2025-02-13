@@ -108,3 +108,66 @@ nav a {
   background: var(--dark-lavender);
   transform: scale(1.1);
 }
+/* Position the Love Story section */
+#love-story {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 40%;
+  padding: 20px;
+  background: #d3ecff; /* Light Sky Blue */
+  border: 5px solid #ff3366; /* Valentine Red Border */
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 51, 102, 0.4); /* Soft Red Glow */
+  font-family: "Georgia", serif;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Text Styling */
+#love-story h2 {
+  color: #ff3366; /* Flirty Valentine Red */
+  font-size: 26px;
+  text-shadow: 2px 2px 5px rgba(255, 51, 102, 0.3);
+}
+
+#love-story p {
+  color: #4b0082; /* Deep Lavender */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Valentine-Themed Borders - Heart Animation */
+#love-story::before,
+#love-story::after {
+  content: "💕";
+  font-size: 20px;
+  position: absolute;
+  animation: floating-hearts 1.5s infinite alternate ease-in-out;
+}
+
+#love-story::before {
+  top: -15px;
+  left: 10px;
+}
+
+#love-story::after {
+  bottom: -15px;
+  right: 10px;
+}
+
+/* Floating Heart Animation */
+@keyframes floating-hearts {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+/* Hover Effect */
+#love-story:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 51, 102, 0.5);
+}
