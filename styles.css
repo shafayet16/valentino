@@ -81,3 +81,30 @@ nav a {
   background: var(--light-pink);
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+/* Custom Music Player Styling */
+#music-player {
+  margin-top: 20px;
+  text-align: center;
+  background: var(--pastel-lavender);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+#music-player button {
+  background: var(--deep-lavender);
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#music-player button:hover {
+  background: var(--dark-lavender);
+  transform: scale(1.1);
+}
