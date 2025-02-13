@@ -1,4 +1,3 @@
-/* Define color palette */
 :root {
   --dark-lavender: #4b0082;
   --sky-blue: #87ceeb;
@@ -17,23 +16,27 @@ body {
     var(--light-pink) 90%
   );
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Changed to align content at the top */
   transition: background 1s ease-in-out;
 }
 
 /* Container styling */
 .container {
   max-width: 800px;
+  width: 100%;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  margin-bottom: 20px; /* Added spacing between sections */
 }
 
 .container:hover {
@@ -81,93 +84,77 @@ nav a {
   background: var(--light-pink);
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-/* Custom Music Player Styling */
-#music-player {
-  margin-top: 20px;
-  text-align: center;
-  background: var(--pastel-lavender);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: inline-block;
+
+/* LOVE STORY BOX - Positioned as a Block Element */
+#love-story {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff0f5; /* Soft romantic pink */
+  border: 5px solid #ff3366; /* Valentine Red Border */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.3);
+  font-family: "Georgia", serif;
+  margin-bottom: 20px; /* Added spacing */
 }
 
+/* Headline Styling */
+#love-story h2 {
+  font-size: 28px;
+  color: #ff3366;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Text inside Love Story */
+#love-story p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* MUSIC PLAYER - Positioned as a Block Element */
+#music-player {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  background: #fff0f5;
+  border: 4px solid #ff6699;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(255, 51, 102, 0.3);
+  text-align: center;
+  margin-bottom: 20px; /* Added spacing */
+}
+
+/* Music Buttons */
 #music-player button {
-  background: var(--deep-lavender);
+  background: #ff6699;
   color: white;
-  font-size: 18px;
   border: none;
-  padding: 10px 15px;
-  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 8px;
+  margin: 5px;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
+/* Button Hover Effect */
 #music-player button:hover {
-  background: var(--dark-lavender);
-  transform: scale(1.1);
-}
-/* Position the Love Story section */
-#love-story {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 40%;
-  padding: 20px;
-  background: #d3ecff; /* Light Sky Blue */
-  border: 5px solid #ff3366; /* Valentine Red Border */
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255, 51, 102, 0.4); /* Soft Red Glow */
-  font-family: "Georgia", serif;
-  text-align: left;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #ff3366;
+  transform: scale(1.05);
 }
 
-/* Text Styling */
-#love-story h2 {
-  color: #ff3366; /* Flirty Valentine Red */
-  font-size: 26px;
-  text-shadow: 2px 2px 5px rgba(255, 51, 102, 0.3);
-}
-
-#love-story p {
-  color: #4b0082; /* Deep Lavender */
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Valentine-Themed Borders - Heart Animation */
-#love-story::before,
-#love-story::after {
-  content: "💕";
-  font-size: 20px;
-  position: absolute;
-  animation: floating-hearts 1.5s infinite alternate ease-in-out;
-}
-
-#love-story::before {
-  top: -15px;
-  left: 10px;
-}
-
-#love-story::after {
-  bottom: -15px;
-  right: 10px;
-}
-
-/* Floating Heart Animation */
-@keyframes floating-hearts {
-  from {
-    transform: translateY(0px);
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  #love-story,
+  #music-player {
+    width: 90%;
+    margin: 0 auto 20px; /* Center align and add spacing */
   }
-  to {
-    transform: translateY(-5px);
-  }
-}
 
-/* Hover Effect */
-#love-story:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(255, 51, 102, 0.5);
+  .container {
+    width: 90%;
+  }
 }
