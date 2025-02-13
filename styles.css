@@ -2,6 +2,10 @@
   --dark-lavender: #4b0082;
   --sky-blue: #87ceeb;
   --light-pink: #ffb6c1;
+  --romantic-red: #ff3366;
+  --soft-rose: #ff6699;
+  --gentle-purple: #9370db;
+  --warm-yellow: #ffd700;
   --deep-lavender: #6a0dad;
   --pastel-lavender: #d8bfd8;
 }
@@ -159,19 +163,26 @@ nav a {
   }
 }
 :root {
-  --dark-pink: #ff3366; /* Romantic pink */
-  --soft-pink: #ff69b4; /* Soft pink */
-  --light-pink: #fff0f5; /* Light pink background */
-  --gold: #ffd700; /* Accent gold */
-  --white: #ffffff; /* White text */
-  --shadow: 0 4px 15px rgba(255, 51, 102, 0.3); /* Soft shadow */
+  --dark-lavender: #4b0082; /* Deep lavender */
+  --sky-blue: #87ceeb; /* Sky blue */
+  --light-pink: #ffb6c1; /* Light pink */
+  --deep-lavender: #6a0dad; /* Deep lavender accent */
+  --pastel-lavender: #d8bfd8; /* Pastel lavender */
+  --white: #ffffff; /* White */
+  --soft-black: #333333; /* Soft black for text */
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 /* Body Styling */
 body {
   font-family: "Georgia", serif;
-  background: linear-gradient(135deg, var(--dark-pink), var(--soft-pink));
-  color: var(--white);
+  background: linear-gradient(
+    to bottom,
+    var(--sky-blue) 10%,
+    var(--pastel-lavender) 50%,
+    var(--light-pink) 90%
+  );
+  color: var(--soft-black);
   margin: 0;
   padding: 20px;
   min-height: 100vh;
@@ -184,7 +195,7 @@ body {
 .valentine-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 50px;
   max-width: 1200px;
   width: 100%;
   padding: 20px;
@@ -192,7 +203,7 @@ body {
 
 /* Valentine Box Styling */
 .valentine-box {
-  background: var(--light-pink);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
   border-radius: 15px;
   padding: 20px;
   box-shadow: var(--shadow);
@@ -201,37 +212,38 @@ body {
 
 .valentine-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 25px rgba(255, 51, 102, 0.5);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Vows Section */
 #vows {
-  background: linear-gradient(135deg, var(--dark-pink), var(--soft-pink));
-  color: var(--white);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
 }
 
 #vows h2 {
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
+  color: var(--soft-rose); /* Deep lavender for headings */
 }
 
 #vows p {
   font-size: 16px;
   line-height: 1.6;
   text-align: justify;
+  color: var(--soft-black); /* Soft black for text */
 }
 
 /* 100 Reasons I Love You Section */
 #100-reasons-i-love-you {
-  background: var(--light-pink);
-  color: var(--dark-pink);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
 }
 
 #100-reasons-i-love-you h2 {
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
+  color: var(--deep-lavender); /* Deep lavender for headings */
 }
 
 #100-reasons-i-love-you ul {
@@ -243,19 +255,19 @@ body {
 #100-reasons-i-love-you li {
   margin-bottom: 10px;
   font-size: 16px;
-  color: var(--dark-pink);
+  color: var(--soft-rose); /* Soft black for text */
 }
 
 /* Timeline Section */
 #timeline {
-  background: linear-gradient(135deg, var(--soft-pink), var(--dark-pink));
-  color: var(--white);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
 }
 
 #timeline h2 {
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
+  color: var(--deep-lavender); /* Deep lavender for headings */
 }
 
 #timeline ul {
@@ -266,23 +278,57 @@ body {
 #timeline li {
   margin-bottom: 15px;
   font-size: 16px;
-  color: var(--white);
+  color: var(--soft-black); /* Soft black for text */
 }
 
 /* Wishes Section */
 #wishes {
-  background: var(--light-pink);
-  color: var(--dark-pink);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
 }
 
 #wishes h2 {
   font-size: 28px;
   margin-bottom: 15px;
   text-align: center;
+  color: var(--deep-lavender); /* Deep lavender for headings */
 }
 
 #wishes p {
   font-size: 16px;
   line-height: 1.6;
   text-align: justify;
+  color: var(--soft-black); /* Soft black for text */
+}
+/* Adjust gap between grid items in valentine-container */
+.valentine-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Increased gap between items */
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Adjust spacing between other containers */
+.container,
+#love-story,
+#music-player,
+#vows,
+#100-reasons-i-love-you,
+#timeline,
+#wishes {
+  margin-bottom: 30px; /* Adjusted to increase the gap */
+}
+
+/* You can also add spacing for other sections with similar structure */
+#love-story,
+#music-player,
+#vows,
+#100-reasons-i-love-you,
+#timeline,
+#wishes {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
 }
