@@ -332,6 +332,8 @@ body {
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
-#timeline {
+#timeline,
+#100-reasons-i-love-you,
+#vows {
   border-bottom: var(--romantic-red) 10px solid;
 }
